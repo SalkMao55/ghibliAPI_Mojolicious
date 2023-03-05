@@ -2,6 +2,7 @@
 use Mojolicious::Lite -signatures;
 use Mojo::JSON qw(decode_json encode_json true false);
 use Mojo::File qw(curfile); # Get path of current file
+use Data::Dumper;
 
 my $path = curfile;
 my $file_data = $path->dirname."/data/data.json";
